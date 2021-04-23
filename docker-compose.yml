@@ -4,6 +4,7 @@ services:
     redis:
         restart: always
         image: streamsync-redis
+        container_name: streamsync-redis
         build: .
         ports:
             - 6379:6379
